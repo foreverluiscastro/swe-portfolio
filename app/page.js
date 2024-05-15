@@ -479,7 +479,7 @@ export default function Page() {
               </div>
               <div className="sm:w-1/2">
                 <p className="sm:px-4 text-center text-sm sm:text-md lg:text-lg xl:text-xl">
-                  The PomoCoach backend acts as a robust intermediary, handling
+                  The PomoCoach backend was built using Ruby on Rails and acts as a robust intermediary, handling
                   frontend requests seamlessly. However, its true prowess lies
                   in its integration with the OpenAI API. The backend stores
                   vital user information, including daily goals and lifestyle

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [selectedSection, setSelectedSection] = useState("Home");
 
   const sections = ["Home", "Experience", "Projects", "Follow"];
@@ -59,8 +59,8 @@ export default function page() {
         {/* margins and padding */}
         <div className="TopNavCont max-w-screen-xl mx-auto h-16 flex justify-between px-4 items-center">
           <div className="flex items-center">
-            <img src="/images/programming.png" className="w-10"/>
-            <h1 className="text-2xl px-4">Castro's Code</h1>
+            <img src="/images/programming.png" className="w-10" alt="programming"/>
+            <h1 className="text-2xl px-4">Castro&apos;s Code</h1>
           </div>
           <div className="ButtonsContainer flex gap-2">{sectionsToDisplay}</div>
         </div>
@@ -74,6 +74,7 @@ export default function page() {
                 src={images[currentImage]}
                 className="lg:w-96 w-52 object-cover object-top rounded-full lg:h-96 h-52 spinning-image transition-opacity duration-1000 shadow-2xl"
                 style={{ opacity, transition: "opacity 1s ease-in-out" }}
+                alt="me"
               />
             </div>
             <div className="HomeInfo sm:w-1/2 flex justify-center items-center">
@@ -96,10 +97,10 @@ export default function page() {
               <div className="text-black rounded-md bg-white p-4 shadow-lg">
                 <h1 className="text-2xl mb-4">About Me</h1>
                 <p className=" mb-2">
-                  I'm based in sunny New Jersey with 4 years of experience
+                  I&apos;m based in sunny New Jersey with 4 years of experience
                   programming in <b>JavaScript</b>, <b>Ruby</b> and{" "}
                   <b>Python</b>. I believe that innovation is born from unique
-                  and diverse persepectives. Let's collaborate to transform your
+                  and diverse persepectives. Let&apos;s collaborate to transform your
                   next idea into a reality.
                 </p>
                 <p className="mb-2">
@@ -113,6 +114,7 @@ export default function page() {
               <img
                 src="/images/band.jpg"
                 className="w-96 rounded-lg h-96 shadow-2xl"
+                alt="band"
               />
             </div>
           </div>
@@ -129,7 +131,7 @@ export default function page() {
             <div className="ExperienceDetails sm:w-1/2 flex justify-center items-center text-center">
               <p className="text-lg xl:text-xl">
                 Technical Coach by day, programmer by night! Here are my most
-                recent roles as a Software Engineer, where I've had the
+                recent roles as a Software Engineer, where I&apos;ve had the
                 privilege to immerse myself in the world of programming.
               </p>
             </div>
@@ -148,6 +150,7 @@ export default function page() {
                   <img
                     src="/images/campus.jpg"
                     className="rounded-lg h-54 xl:h-96"
+                    alt="campus"
                   />
                 </div>
                 <div className="sm:w-1/2">
@@ -172,7 +175,7 @@ export default function page() {
 
         <div className="PCASection snap-center h-full bg-slate-300 text-black">
           <div className="AboutContainer flex flex-col h-full px-4 mx-auto max-w-screen-xl justify-center text-center items-center">
-            <img src="/images/PCA-logo.png" className="h-1/4 rounded-lg" />
+            <img src="/images/PCA-logo.png" className="h-1/4 rounded-lg" alt="pca"/>
             <div>
               <h1 className="text-2xl mb-4">
                 The Park City App - Software Engineer
@@ -187,11 +190,11 @@ export default function page() {
                     development, where I meticulously researched and implemented
                     code adhering to React Native best practices. This phase not
                     only honed my coding skills but also contributed to the
-                    app's user interface and experience. Recognizing the
+                    app&apos;s user interface and experience. Recognizing the
                     significance of data-driven decision-making, I took the
                     initiative to develop an analytical API for the app. This
                     API proved instrumental in tracking user behavior, providing
-                    invaluable insights to identify and optimize the app's most
+                    invaluable insights to identify and optimize the app&apos;s most
                     valuable features.
                   </p>
                 </div>
@@ -199,6 +202,7 @@ export default function page() {
                   <img
                     src="/images/parkcity.jpg"
                     className="rounded-lg h-54 xl:h-96"
+                    alt="park-city"
                   />
                 </div>
               </div>
@@ -217,7 +221,7 @@ export default function page() {
             <div className="ProjectDetails sm:w-1/2 flex justify-center items-center text-center">
               <p className="text-lg xl:text-xl">
                 The difference between dreams and reality is commitment. When
-                I'm not working on other people's ideas I have a few passion
+                I&apos;m not working on other people&apos;s ideas I have a few passion
                 projects that I dedicate my time to.
               </p>
             </div>
@@ -231,15 +235,16 @@ export default function page() {
                 <img
                   src="/images/remy-banner.png"
                   className="w-96 rounded-lg h-96 shadow"
+                  alt="remy"
                 />
               </div>
             </div>
             <div className="sm:w-1/2 flex flex-col justify-center items-center p-4">
               <h1 className="text-2xl font-bold">The Remy App</h1>
               <p className="text-center text-lg xl:text-xl">
-                Wouldn't it be nice to have a nice little mouse telling us what
-                or how to cook? Animals can't do that but Remy can! Powered by
-                OpenAI, Remy is a next generation cooking assistant. Don't feel
+                Wouldn&apos;t it be nice to have a nice little mouse telling us what
+                or how to cook? Animals can&apos;t do that but Remy can! Powered by
+                OpenAI, Remy is a next generation cooking assistant. Don&apos;t feel
                 like going to the grocery store? Generate great recipes using
                 the ingredients you have at home!
               </p>
@@ -256,7 +261,7 @@ export default function page() {
                 target="_blank"
                 className="rounded-md bg-slate-400 hover:bg-slate-500 duration-100 cursor-pointer px-2 py-2 w-fit flex items-center shadow-md"
               >
-                <img src="/images/Octocat.png" className=" h-8 rounded-full" />
+                <img src="/images/Octocat.png" className=" h-8 rounded-full" alt="octocat"/>
                 <p className="ml-2 hidden sm:block">Github Repo</p>
               </a>
             </div>
@@ -268,13 +273,14 @@ export default function page() {
                     Remy, my latest project, embodies a streamlined frontend
                     architecture designed to deliver an exceptional user
                     experience while maintaining scalability and performance.
-                    Here's a glimpse into its core components:
+                    Here&apos;s a glimpse into its core components:
                   </p>
                 </div>
                 <div className="sm:w-1/2 flex justify-center">
                   <img
                     src="/images/remy-profile.png"
                     className="rounded shadow-lg mb-4 h-48 xl:h-96"
+                    alt="profile"
                   />
                 </div>
               </div>
@@ -283,6 +289,7 @@ export default function page() {
                   <img
                     src="/images/my-recipe.png"
                     className=" rounded shadow-lg mb-4 h-48 xl:h-96"
+                    alt="recipe"
                   />
                 </div>
                 <div className="sm:w-1/2">
@@ -312,7 +319,7 @@ export default function page() {
                 target="_blank"
                 className="rounded-md bg-slate-400 hover:bg-slate-500 duration-100 cursor-pointer px-2 py-2 w-fit flex items-center shadow-md"
               >
-                <img src="/images/Octocat.png" className=" h-8 rounded-full" />
+                <img src="/images/Octocat.png" className=" h-8 rounded-full" alt="octocat"/>
                 <p className="ml-2 hidden sm:block">Github Repo</p>
               </a>
             </div>
@@ -322,6 +329,7 @@ export default function page() {
                   <img
                     src="/images/recipe-form.png"
                     className="rounded shadow-2xl mb-4 h-48 xl:h-96"
+                    alt="form"
                   />
                 </div>
                 <div className="sm:w-1/2">
@@ -341,7 +349,7 @@ export default function page() {
                       The API leverages the capabilities of the OpenAI API to
                       craft innovative, AI-generated recipes, adding a unique
                       and dynamic dimension to a recipe app. By harmonizing
-                      Flask's flexibility with RESTful design, the Remy API not
+                      Flask&apos;s flexibility with RESTful design, the Remy API not
                       only empowers users to effortlessly navigate its features
                       but also fosters a seamless connection between human
                       creativity and artificial intelligence.
@@ -352,6 +360,7 @@ export default function page() {
                   <img
                     src="/images/backend.png"
                     className=" rounded shadow-2xl mb-4 h-48 xl:h-96"
+                    alt="backend"
                   />
                 </div>
               </div>
@@ -364,6 +373,7 @@ export default function page() {
             <img
               src="/images/PC-logo.PNG"
               className="rounded-xl shadow-md mb-4 w-1/2"
+              alt="pca-logo"
             />
 
             <div className="flex flex-col justify-center items-center">
@@ -371,7 +381,7 @@ export default function page() {
                 <h1 className="text-2xl font-bold">The PomoCoach App</h1>
                 <p className="text-center text-md text-lg xl:text-xl">
                   Study habits can be challenging to establish and maintain.
-                  PomoCoach is not just a timer; it's a powerful accountability
+                  PomoCoach is not just a timer; it&apos;s a powerful accountability
                   tool designed to help you implement a routine rooted in the
                   proven Pomodoro Technique. This app aims to provide users with
                   a structured study and decompression routine, optimizing their
@@ -391,7 +401,7 @@ export default function page() {
                 target="_blank"
                 className="rounded-md bg-green-700 hover:bg-green-600 duration-300 cursor-pointer px-2 py-2 w-fit flex items-center shadow-md"
               >
-                <img src="/images/Octocat.png" className=" h-8 rounded-full" />
+                <img src="/images/Octocat.png" className=" h-8 rounded-full" alt="octocat"/>
                 <p className="ml-2 hidden sm:block">Github Repo</p>
               </a>
             </div>
@@ -401,6 +411,7 @@ export default function page() {
                   <img
                     src="/images/PomoCoach.PNG"
                     className=" rounded shadow-lg mb-4 h-48 xl:h-96"
+                    alt="pomocoach"
                   />
                 </div>
                 <div className="sm:w-1/2">
@@ -412,7 +423,7 @@ export default function page() {
                       looks great but also performs exceptionally well across
                       various devices and screen sizes. This meticulous approach
                       reflects my commitment to delivering high-quality,
-                      performant solutions that stand out in today's competitive
+                      performant solutions that stand out in today&apos;s competitive
                       landscape.
                     </p>
                   </div>
@@ -432,6 +443,7 @@ export default function page() {
                   <img
                     src="/images/Stats.PNG"
                     className="rounded shadow-lg mb-4 h-48 xl:h-96"
+                    alt="stats"
                   />
                 </div>
               </div>
@@ -448,7 +460,7 @@ export default function page() {
                 target="_blank"
                 className="rounded-md bg-green-700 hover:bg-green-600 duration-300 cursor-pointer px-2 py-2 w-fit flex items-center shadow-md"
               >
-                <img src="/images/Octocat.png" className=" h-8 rounded-full" />
+                <img src="/images/Octocat.png" className=" h-8 rounded-full" alt="octocat"/>
                 <p className="ml-2 hidden sm:block">Github Repo</p>
               </a>
             </div>
@@ -457,10 +469,12 @@ export default function page() {
                 <img
                   src="/images/signup.PNG"
                   className="rounded shadow-2xl h-52 sm:h-72 xl:h-96"
+                  alt="signup"
                 />
                 <img
                   src="/images/Ai.PNG"
                   className="rounded shadow-2xl h-52 sm:h-72 xl:h-96"
+                  alt="ai"
                 />
               </div>
               <div className="sm:w-1/2">
@@ -502,6 +516,7 @@ export default function page() {
                     <img
                       src="/images/LinkedIn.png"
                       className="  bg-slate-500 hover:bg-slate-400 cursor-pointer transition duration-300 px-4 rounded-3xl h-52 w-52"
+                      alt="linkedin"
                     />
                   </a>
                   <a className="w-1/2 flex justify-center" href="https://github.com/foreverluiscastro"
@@ -509,6 +524,7 @@ export default function page() {
                     <img
                       src="/images/Octocat.png"
                       className="bg-slate-500 hover:bg-slate-400 cursor-pointer transition duration-300 p-4 rounded-full h-52 w-52"
+                      alt="github"
                     />
                   </a>
                 </div>
@@ -518,12 +534,14 @@ export default function page() {
                     <img
                       src="/images/medium.png"
                       className="bg-slate-500 hover:bg-slate-400 cursor-pointer transition duration-300 p-4 rounded-3xl h-52 w-52"
+                      alt="medium"
                     />
                   </a>
                   <a className="w-1/2 flex justify-center" href="mailto:luiscastro.swe@gmail.com">
                     <img
                       src="/images/email.png"
                       className="bg-slate-500 hover:bg-slate-400 cursor-pointer transition duration-300 px-4 rounded-3xl h-52 w-52"
+                      alt="email"
                     />
                   </a>
                 </div>
